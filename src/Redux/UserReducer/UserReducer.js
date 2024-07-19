@@ -16,7 +16,7 @@ const userSlice = createSlice({
       state.push(action.payload);
     },
     updateUser: (state, action) => {
-      const { name, email } = action.payload;
+      const { id, name, email } = action.payload;
       const updatingUser = state.find((user) => user.id == id);
       if (updateUser) {
         updatingUser.name = name;
