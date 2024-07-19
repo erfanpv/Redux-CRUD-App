@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useNavigate } from "react-router-dom";
 
 const userList = [
   {
@@ -17,7 +16,7 @@ const userSlice = createSlice({
       state.push(action.payload);
     },
     updateUser: (state, action) => {
-      const { id, name, email } = action.payload;
+      const { name, email } = action.payload;
       const updatingUser = state.find((user) => user.id == id);
       if (updateUser) {
         updatingUser.name = name;
