@@ -1,4 +1,5 @@
 Redux CRUD Application
+
 This project is a simple CRUD (Create, Read, Update, Delete) application built using React.js and Redux. It demonstrates the use of Redux for state management, providing a robust and scalable structure for managing the application's state.
 
 Features
